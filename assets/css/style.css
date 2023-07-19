@@ -22,7 +22,9 @@ nav {
 .brand {
   width: 60%;
 }
-
+.brand a {
+  text-decoration: none;
+}
 .brand p {
   display: inline;
   text-align: center;
@@ -75,6 +77,9 @@ nav {
   background: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
   ;
 }
+.banner-description a {
+  text-decoration: none;
+}
 
 .banner-description h4 {
   color: #0B0223;
@@ -112,6 +117,7 @@ button {
   border-radius: 48px;
   color: #FFF;
   background-color: #FF42A5;
+  cursor: pointer;
 }
 
 .btn-blue {
@@ -120,6 +126,7 @@ button {
   border-radius: 48px;
   color: #FFF;
   background-color: #4EC5F7;
+  cursor: pointer;s
 }
 
 /* online games styles */
