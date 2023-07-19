@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;1,700;1,800&display=swap');
 
-* {
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Work Sans', sans-serif;
-}
+*, *:before, *:after{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
+  } 
 
+
+/* nav styles */
 nav {
     display: flex;
     justify-content: space-between;
@@ -18,7 +22,7 @@ nav {
     width: 60%;
 }
 
-.brand h3 {
+.brand p {
     display: inline;
     text-align: center;
     font-size: 2.8rem;
@@ -57,3 +61,181 @@ nav {
 .nav-item a {
     text-decoration: none;
 }
+
+/* banner section styles */
+.banner-container {
+    display: flex;
+    margin: 20px 240px;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-description {
+    background: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);;
+}
+
+.banner-description h4 {
+    color: #0B0223;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: 14px;
+    margin-bottom: 10px;
+}
+
+.banner-description h3 {
+    text-align: center;
+font-size: 6rem;
+font-weight: 800;
+background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+margin-bottom: 10px;
+}
+
+.banner-description p {
+color: #534C64;
+font-size: 1.2rem;
+font-weight: 500;
+line-height: 2;
+}
+button {
+    margin: 30px 10px;
+}
+.btn-primary {
+padding: 21px 40px;
+border: 0px;
+border-radius: 48px;
+color: #FFF;
+background-color: #FF42A5;
+}
+.btn-blue {
+    padding: 21px 40px;
+border: 0px;
+border-radius: 48px;
+color: #FFF;
+background-color: #4EC5F7;
+}
+
+/* online games styles */
+.online-games h3 {
+color: #0B0223;
+font-size: 3rem;
+font-weight: 700;
+text-align: center;
+margin: 100px 0px 20px 0px;
+}
+ h3 span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+ }
+ .online-games p {
+    color: #534C64;
+    text-align: center;
+font-size: 1.2rem;
+font-weight: 400;
+line-height: 30px;
+margin-bottom: 35px;
+ }
+.online-games-card-container{
+    display: flex;
+    gap: 24px;
+    border-radius: 16px;
+    justify-content: center;
+}
+.online-games-card-container p {
+color: #534C64;
+font-size: 20px;
+font-weight: 500;
+line-height: 30px;
+margin: 25px auto;
+}
+
+.img-container .title{
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .content {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .content .content-overlay {
+    background: rgba(0,0,0,0.7);
+    border-radius: 16px;
+    background-image: url('../photos/Group 14.png');
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  
+  .content:hover .content-overlay{
+    opacity: 1;
+  }
+  
+  .content-image{
+    width: 100%;
+  }
+  
+  .content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  .content:hover .content-details{
+    top: 40%;
+    left: 50%;
+    opacity: 1;
+  }
+  
+  .content-details h3{
+    color: #fff;
+  }
+  
+  .content-details p{
+    color: #FF42A5;
+    font-size: 1rem;
+  }
+  
+  .fadeIn-bottom{
+    top: 80%;
+  }
+  
+  .fadeIn-top{
+    top: 20%;
+  }
+  
+  .fadeIn-left{
+    left: 20%;
+  }
+  
+  .fadeIn-right{
+    left: 80%;
+  }
+
+/* responsive for mobile */
